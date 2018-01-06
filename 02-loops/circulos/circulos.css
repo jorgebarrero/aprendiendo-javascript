@@ -1,0 +1,31 @@
+html {
+    width: 100%;
+    height: inherit;
+    background: #ddd;
+}
+
+canvas {
+    display: block;
+}
+
+body {
+    margin: 0;
+}
+
+button {
+
+    top: 5px;
+    left: 5px;
+}
+
+btn2 {
+
+    top: 5px;
+    left: 5px;
+}
+
+h1{
+    color: darkblue;
+    margin-top: 50px;
+
+}
