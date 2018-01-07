@@ -4,14 +4,14 @@ Repositorio relacionado con el aprendizaje de javascript desde cero.
 El propósito fundamental es recopilar buenas fuentes de información que orienten en el aprendizaje de JS.
 ## Temas abordados
 
-01-html
-02-css
-03-javascript
-04-chrome-dev-tools
-05-visual-code-studio
-06-git
-07-json
-08-markdown
+- 01-html
+- 02-css
+- 03-javascript
+- 04-chrome-dev-tools
+- 05-visual-code-studio
+- 06-git
+- 07-json
+- 08-markdown
 
 ## Estructura
 

@@ -15,6 +15,8 @@ JS es un lenguaje originalmente construido para interactuar con una página web,
 
 ### HTML
 
+[Primera especificación HTML](https://www.w3.org/MarkUp/draft-ietf-iiir-html-01.txt)
+
 El formato html es muy permisivo y tolerante, asi que puede contener errores y aún asi ser legible, aunque no realmente la mejor práctica. Si crea un archivo de texto plano (.txt), escribe "hola mundo" lo guarda cambiando su extensión a .html, puede abrirlo con un navegador (**browser**) como FireFox, Google Chrome, Opera, Explorer, Safari, etc. y en la mayoría de los casos podrá ver el texto "hola mundo", a pesar de no apegarse a la especificación html. (ver: 01-texto-hola-mundo.html).
 
 Cuando un html esta bien escrito, decimos que está bien formado (**well formed**). Este es un concepto muy importante.

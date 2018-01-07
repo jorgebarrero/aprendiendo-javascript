@@ -7,6 +7,18 @@
 ](https://www.youtube.com/watch?v=zPHerhks2Vg)
 Este video proporciona una idea básica de como trabajar con javascript y el navegador Google Chrome mientras se edita una página.
 
+## Introducción
+
+Una cosa es conocer los conceptos teóricos en los que se basa el lenguaje y otra muy diferente es ver como estos conceptos se ponen en práctica.
+
+La idea de este documento es usar las ideas del video señalado arriba para practicar el uso de las herramientas que facilitan el aprendizaje de JS.
+
+A los efectos de esta guía, usaremos Google Chrome.
+
+## Propósito
+
+JS es un lenguaje originalmente construido para interactuar con una página web, que no es otra cosa que un archivo de texto plano escrito de una cierta manera (en html), y lo realiza una página a la vez que es básicamente lá página que estás mirando. A efectos prácticos, tome cualquier archivo de texto (que tiene una extensión .txt) y cambie su extensión a .html y tendrá una página web. No hace nada, pero para efectos prácticos, es más que suficiente.
+
 ## Como encaja JS
 
 JS en principio, no puede (y por razones de seguridad no debe) interactuar con otras páginas diferentes a aquella a la que está vinculado, así que el "ámbito" (**scope**) máximo es la ventana del navegador donde estoy viendo la página web (**window**).
