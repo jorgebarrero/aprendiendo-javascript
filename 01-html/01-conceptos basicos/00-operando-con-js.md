@@ -1,7 +1,5 @@
 # Operando con JS
 
-Basado en [JavaScript in Half an Hour (Without jQuery!)
-](https://www.youtube.com/watch?v=zPHerhks2Vg)
 
 ## Introducción
 
@@ -17,7 +15,7 @@ JS es un lenguaje originalmente construido para interactuar con una página web,
 
 ### HTML
 
-El formato html es muy permisivo y tolerante, asi que puede contener errores y aún asi ser legible, aunque no realmente la mejor práctica. Si crea un archivo de texto plano (.txt), escribe "hola mundo" lo guarda cambiando su extensión a .html, puede abrirlo con un navegador (**browser**) como FireFox, Google Chrome, Opera, Explorer, Safari, etc. y en la mayoría de los casos podrá ver el texto "hola mundo", a pesar de no apegarse a la especificación html. (ver: 01-ob-texto-hola-mundo.html).
+El formato html es muy permisivo y tolerante, asi que puede contener errores y aún asi ser legible, aunque no realmente la mejor práctica. Si crea un archivo de texto plano (.txt), escribe "hola mundo" lo guarda cambiando su extensión a .html, puede abrirlo con un navegador (**browser**) como FireFox, Google Chrome, Opera, Explorer, Safari, etc. y en la mayoría de los casos podrá ver el texto "hola mundo", a pesar de no apegarse a la especificación html. (ver: 01-texto-hola-mundo.html).
 
 Cuando un html esta bien escrito, decimos que está bien formado (**well formed**). Este es un concepto muy importante.
 
@@ -33,7 +31,7 @@ Podemos indicarle al navegador que queremos que la letra sea azul o roja. Pero s
 
 ### Importancia de apegarse a las recomendaciones HTML
 
-Siendo honestos, podemos poner cualquier cosa en una pagina web ya que es un documento de texto y aun así poder ver algo, a pesar se ser una pésima práctica.
+Siendo honestos, podemos poner cualquier cosa en una pagina web y mostrarlo en el navegador, pero lo correcto y conveniente es apegarse a la norma.
 
 Lo ideal, es que escribamos un archivo siguiendo el estándard [WC3](https://www.w3c.es/Divulgacion/GuiasBreves/Estandares) y en la actualidad incluso existen herramientas que automáticamente validan si el html que has escrito cumple el estándard: [Markup Validation Service](https://validator.w3.org/).
 
@@ -125,7 +123,52 @@ El navegador interpretará este código eliminando los espacios y cambios de lin
 
 Es de notar que el rojo puede variar según el dispositivo, la pantalla y el navegador involucrado, en general tendremos el texto: 'Hola mundo Hola mundo Hola mundo', escrito en rojo.
 
-Los atributos de las etiquetas permiten especificar una gran cantidad de cosas, pero en general algunas etiquetas en particular requieren ciertos datos específicos.
+Los atributos de las etiquetas permiten especificar una gran cantidad de cosas, pero en general algunas etiquetas en particular requieren ciertos datos específicos. como es el caso de la etiqueta <img />  que despliega una imagen, pero requiere saber el nombre del archivo y el lugar donde se encuentra dicha imagen.
+
+En el ejemplo 04-etiqueta de imagen puede observar una carpeta que contiene dos archivos:
+
+04-etiqueta-de-imagen
+  ---04-ejemplo-de-imagen.html
+  ---logo.jpg
+
+El documento 04-ejemplo-de-imagen.html se puede abrir con el navegador (**browser**) y podrá ver que despliega el logo que está en el archivo logo.jpg
+
+Esto lo logramos escribiendo la etiqueta de esta manera:
+
+````html
+<img src="./logo.jpg" alt="Este es un logo"/>
+````
+
+Aquí vemos dos etiquetas. La primera (src) se refiere a donde esta el archivo (**source**) y la segunda es el texto alternativo (alt) en caso que el navegador no pueda encontrar el archivo o no sepa como dibujarlo (**alternative text**). Si por alguna razón, quitamos la imagen o la colocamos en otro lugar, el navegador no podrá mostrar la imagen y usará el texto alternativo en su lugar.
+
+### composición de una página a partir de muchos archivos
+
+Para componer una pagina web, básicamente tomamos varios archivos, que se encuentran en lugares diferentes y con etiquetas html le indicamos al navegador que las busque y las muestre todas en la misma página.
+
+En el ejemplo 05-composicion-de-pagina, observamos esta estructura de datos
+
+05-composicion-de-pagina
+---- 05-pagina-compuesta.html
+---- img
+------- en-icon.png
+------- en.png
+------- es-icon-.png
+------- es.png
+------- logo.png
+
+El archivo html contiene el siguiente código:
+
+````html
+<img src="./img/enlazatech-logo.png" alt="Loo de enlazatech">
+<hr>
+<img src="./img/en-icon.png" alt="Ingés">
+<hr>
+<img src="./img/es.png" alt="Español">
+````
+
+Observe que la imágenes contienen una dirección que empieza por ./img/ que significa que a partir de donde se encuentra el archivo html, ingrese en la carpeta **img** que es donde se encuentran los archivos de las imágenes.
+
+El navegador busca los archivos y realiza una composición con las imágenes separándolas con lineas horizontales gracias a la etiqueta <hr>.
 
 
 ## El rol de JS
