@@ -7,6 +7,15 @@
 ](https://www.youtube.com/watch?v=zPHerhks2Vg)
 Este video proporciona una idea básica de como trabajar con javascript y el navegador Google Chrome mientras se edita una página.
 
+## Sitios web
+
+[https://developer.mozilla.org/es/](https://developer.mozilla.org)
+Sitio de Mozilla muy completo sobre tecnologias web
+
+[The Modern JavaScript Tutorial](https://javascript.info)
+Tutorial muy completo y detallado de Javascript
+
+
 ## Introducción
 
 Una cosa es conocer los conceptos teóricos en los que se basa el lenguaje y otra muy diferente es ver como estos conceptos se ponen en práctica.

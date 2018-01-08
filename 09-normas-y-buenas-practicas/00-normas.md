@@ -24,13 +24,13 @@ Los nombres de las cosas son de vital importancia para comunicarse efectivamente
 
 El juego de caracteres usado debe ser utf-8, teniendo en cuenta que mayúsculas y minúsculas son diferentes.
 
-Solo se usan letras del alfabeto inglés, mayúsculas o minúsculas. No hay letras acentuadas ni ñ o caracteres especiales (&,%,#, etc.). Estos últimos tienen usos reservados.
+Solo se usan letras del alfabeto inglés, mayúsculas o minúsculas. No hay letras acentuadas ni ñ o caracteres especiales (&,%,#, etc.). Estos últimos tienen usos reservados, especialmente el piso u  **undersore** (_) y el símbolo de dolar o **dollar sign** ($)
 
 Los nombres de las cosas van sin espacios. Para facilitar la legibilidad de las palabras compuestas se usan las siguientes estrategias:
 
 * camelCase
   * primera letra en minúscula y sin espacio las siguientes palabras
-* UpperCamelCase (PascalCase)
+* UpperCamelCase (PascalCase, PartialCase)
   * primera en mayúscula de cada palabra sin espacios
 * lower-dash-case
   * todo en minúscula separado con guiones
@@ -67,3 +67,11 @@ Si tenemos nos referimos a una variable que describe el salario antes del aument
 ### Constantes invariantes
 
 * Las constantes invariantes (numero PI, constante E, etc, ) se escriben en UPPER-DASH-CASE
+
+### Uso de comillas simples y dobles
+
+En la mayoría de los casos, pueden usarse unas u otras, pero para ser consistentes se adoptan estas prácticas.
+
+* los JSON usan comillas dobles
+* los HTML usan comillas dobles
+* los archivos javascript usan comillas simples
